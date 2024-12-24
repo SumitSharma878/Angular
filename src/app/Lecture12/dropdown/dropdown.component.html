@@ -3,7 +3,7 @@
     <h2>header Part</h2>
    </div>
    <div class="contentPart">
-    <div class="workingWithNgFor">
+    <!-- <div class="workingWithNgFor">
       <table class="table table-borderless table-dark">
         <thead>
           <tr>
@@ -16,23 +16,32 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let product of products,index as i">
-            <td scooper="row">{{i+1}}</td>
+       -->
+          <!-- <tr *ngFor="let product of products,index as i">
+            <button type="button" class="btn btn-danger">Delete</button> -->
+            
+            <!-- <button type="button"  class="btn btn-primary">Update</button>
+          </>
+         
+         
+        </tbody>
+      </table> <td scooper="row">{{i+1}}</td>
             <td>{{product.id}}</td>
             <td>{{product.name}}</td>
             <td><img src="{{product.img}}" alt="Loading wait"></td>
             <td>{{product.price}}</td>
-            <button type="button" class="btn btn-danger">Delete</button>
-            
-            <button type="button"  class="btn btn-primary">Update</button>
-          </tr>
-         
-         
-        </tbody>
-      </table>
+            -->
+
+      <!--tr creating form  to add items and show-->
+
+    <div class="myForm">
+      <input type="text" name="item" placeholder="Enter favourie items " #item>
+      <button class="btn btn-primary" (click)="addItem(item)">Add Item</button>
+    </div>
+    {{item.value}}
+    {{itemValue}}
     </div>
    </div>
    <div class="footerPart">
     
    </div>
-</div>
