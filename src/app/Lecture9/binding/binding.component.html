@@ -1,0 +1,28 @@
+<p>binding works!</p>
+<div class="container">
+     <div class="headerPart">
+         <!-- <h1>My Name is {{firstName}} {{lastName}}</h1> -->
+         <hr color="red">
+         
+     </div>
+     <div class="contentPart">
+      <h3>User Information</h3>
+         FirstName :{{firstName}} 
+         LastName :{{lastName}}
+         Age:{{age}}
+         MobileNo:{{mobileNo}}
+         Gmail:{{gmailId}}
+         <!-- <h3>{{locationOfImage}}</h3>
+         <img [src]="locationOfImage" alt="Still loading the image">
+         <br>
+         <button (click)="action1()">Download me</button> -->
+         <!-- Two binding -->
+          FirstName : <input type="text" [(ngModel)]="firstName">
+          <input type="button" value="ChangeData" (click)="action2()">
+
+     </div>
+     <hr color="Green">
+     <div class="footerPart">
+         <p>Copyright &copy; My Website 2022</p>
+     </div>
+</div>
