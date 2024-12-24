@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class BindingComponent {
 action2(): void {
-  this.firstName="sudir",
+  this.firstName="suduir",
   this.lastName="kumar",
   this.gmailId="sudhir@gmail.com",
   this.age=35,
