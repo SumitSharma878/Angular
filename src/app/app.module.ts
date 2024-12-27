@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BindingComponent } from './Lecture9/binding/binding.component';
 import { FormsModule} from '@angular/forms';
-import { DropdownComponent } from './Lecture12/dropdown/dropdown.component'
+import { DropdownComponent } from './Lecture12/dropdown/dropdown.component';
+import { IndiaComponent } from './india/india.component';
+import { BiharComponent } from './bihar/bihar.component';
+import { UPComponent } from './up/up.component'
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     BindingComponent,
-    DropdownComponent
+    DropdownComponent,
+    IndiaComponent,
+    BiharComponent,
+    UPComponent
   ],
   imports: [
     BrowserModule,
