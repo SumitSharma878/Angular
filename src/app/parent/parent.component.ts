@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent {
+  childDataReceived:string = '';
+receivedData(data: any):void {
+ this.childDataReceived =data;
+}
 parentMessage: string="hellow child how are you?";
+
 }
