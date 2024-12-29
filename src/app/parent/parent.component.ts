@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent {
-  x:number = 8000;
+parentMessage: string="hellow child how are you?";
 }
