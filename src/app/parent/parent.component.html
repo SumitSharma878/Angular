@@ -1,6 +1,11 @@
-<p>parent works!</p>
-
-<hr/>
-Receive data from child : {{childDataReceived}}
-<hr/>
-<app-child [y]="parentMessage"(myEvent)="receivedData($event)"></app-child>
+<div class="container">
+  <div class="row">
+   <div class="col-mid-12">
+    <h1>from parent component</h1>
+    <button (click)="accessProperty()">Access Property</button>
+   </div>
+  </div>
+  <div class="row">
+    <app-child></app-child>
+  </div>
+</div>

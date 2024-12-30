@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { ChildComponent } from '../child/child.component';
 
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })
-export class ParentComponent {
-  childDataReceived:string = '';
-receivedData(data: any):void {
- this.childDataReceived =data;
+export class ParentComponent implements AfterViewInit {
+// parent will take entire reference of child components
+@ViewChild( ChildComponent) boxId:ChildComponent={}as ChildComponent;
+accessProperty():void{
+  this.boxId.clickMe();
+  this.boxId.uname="sumitsharmaji";
 }
-parentMessage: string="hellow child how are you?";
-
+ngAfterViewInit(): void {
+  
+}
 }
