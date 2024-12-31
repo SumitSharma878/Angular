@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
-import { ParentComponent } from './parent/parent.component';
+import { CustomizedstyledirectiveDirective } from './customizedstyledirective.directive';
+import { RenderCustomizedstyldirectiveDirective } from './render-customizedstyldirective.directive';
+import { MyeventdirectiveDirective } from './myeventdirective.directive';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent,
-    ParentComponent,
+    CustomizedstyledirectiveDirective,
+    RenderCustomizedstyldirectiveDirective,
+    MyeventdirectiveDirective,
+   
     
    
    
